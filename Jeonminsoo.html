@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전민수 | Portfolio</title>
+<meta name="description" content="한양대학교 융합전자공학부 전민수의 포트폴리오">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">Jeon Min soo</a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Hello, I'm</p>
+      <h1 class="hero__title">전민수<span class="hero__title-en">Jeon Min soo</span></h1>
+      <p class="hero__subtitle">한양대학교 융합전자공학부 · Convergence Electronic Engineering</p>
+      <p class="hero__desc">
+        하드웨어와 소프트웨어를 넘나들며 아이디어를 직접 만들어보는 전자공학도입니다.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn--ghost">연락하기</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="아래로 스크롤">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__label">01 · About</p>
+      <h2 class="section__title">소개</h2>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            안녕하세요, 한양대학교 융합전자공학부에 재학 중인 전민수입니다.
+            하나의 아이디어가 회로 위의 신호로, 다시 코드 속의 논리로 옮겨가는 과정에
+            흥미를 느끼며 하드웨어와 소프트웨어의 경계를 넘나드는 공부를 이어오고 있습니다.
+            C, Java, Verilog를 통해 사고를 논리로 구현하는 법을 익혔고, 회로 설계에서
+            임베디드 프로그래밍에 이르는 과정을 직접 손으로 구현하며 이해의 폭을 넓혀왔습니다.
+            최근에는 그 근간이 되는 반도체 분야로 관심을 확장해, 보다 근본적인 원리에서
+            기술을 바라보고자 공부하고 있습니다.
+          </p>
+        </div>
+
+        <div class="about__info">
+          <h3 class="about__info-title">Education</h3>
+          <ul class="timeline">
+            <li class="timeline__item">
+              <span class="timeline__date">재학 중</span>
+              <span class="timeline__main">한양대학교 융합전자공학부</span>
+              <span class="timeline__sub">학사과정</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section__label">02 · Skills</p>
+      <h2 class="section__title">기술 스택</h2>
+
+      <div class="skills__grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul class="tag-list">
+            <li>C</li><li>Java</li><li>Verilog</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Platforms</h3>
+          <ul class="tag-list">
+            <li>Git</li><li>Arduino</li><li>Visual Studio</li><li>VS Code</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Interests</h3>
+          <ul class="tag-list">
+            <li>임베디드 시스템</li><li>하드웨어 설계</li><li>반도체</li><li>게이미피케이션</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section__label">03 · Projects</p>
+      <h2 class="section__title">프로젝트</h2>
+
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__thumb project-card__thumb--img">
+            <img src="assets/project-grutt.png" alt="GRUTT 프로젝트 발표 슬라이드">
+          </div>
+          <div class="project-card__body">
+            <h3>GRUTT · 반려식물 게이미피케이션 플랫폼</h3>
+            <p>
+              '테크노경영학' 교양 수업에서 진행한 팀 프로젝트로, 반려식물을 키우는 경험을
+              게임처럼 즐길 수 있는 게이미피케이션 플랫폼 'GRUTT'를 기획했습니다.
+              센서 기반 스마트 화분의 하드웨어 설계·제작과 사용자 플랫폼 개발을 함께 맡았습니다.
+            </p>
+            <ul class="tag-list tag-list--sm">
+              <li>게이미피케이션</li><li>하드웨어 설계</li><li>Arduino</li><li>팀 프로젝트</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/jms1005" target="_blank" rel="noopener" class="link">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--soon">
+          <div class="project-card__thumb" aria-hidden="true">＋</div>
+          <div class="project-card__body">
+            <h3>다음 프로젝트 준비 중</h3>
+            <p>새로운 프로젝트가 곧 업데이트될 예정입니다.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <p class="section__label">04 · Contact</p>
+      <h2 class="section__title">연락처</h2>
+      <p class="contact__desc">궁금한 점이 있거나 함께 일하고 싶으시다면 언제든 편하게 연락해주세요.</p>
+
+      <div class="contact__grid">
+        <a href="mailto:jms1005@hanyang.ac.kr" class="contact-card">
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">jms1005@hanyang.ac.kr</span>
+        </a>
+        <a href="https://github.com/jms1005" target="_blank" rel="noopener" class="contact-card">
+          <span class="contact-card__label">GitHub</span>
+          <span class="contact-card__value">github.com/jms1005</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>&copy; <span id="year"></span> Jeon Min soo. All rights reserved.</p>
+    <a href="#home" class="footer__top">Top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
