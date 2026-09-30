@@ -91,19 +91,19 @@
         <div class="skill-card">
           <h3>Languages</h3>
           <ul class="tag-list">
-            <li>C</li><li>Java</li><li>Verilog</li>
+            <li>C</li><li>Java</li><li>Verilog</li><li>Python</li>
           </ul>
         </div>
         <div class="skill-card">
           <h3>Tools & Platforms</h3>
           <ul class="tag-list">
-            <li>Git</li><li>Arduino</li><li>Visual Studio</li><li>VS Code</li>
+            <li>Git</li><li>Microchip Studio</li><li>AVR / ATmega328P</li><li>Arduino</li><li>Visual Studio</li><li>VS Code</li>
           </ul>
         </div>
         <div class="skill-card">
           <h3>Interests</h3>
           <ul class="tag-list">
-            <li>임베디드 시스템</li><li>하드웨어 설계</li><li>반도체</li><li>게이미피케이션</li>
+            <li>임베디드 시스템</li><li>베어메탈 펌웨어</li><li>하드웨어 설계</li><li>반도체</li><li>센서 신호처리</li><li>게이미피케이션</li>
           </ul>
         </div>
       </div>
@@ -139,11 +139,49 @@
           </div>
         </article>
 
-        <article class="project-card project-card--soon">
-          <div class="project-card__thumb" aria-hidden="true">＋</div>
+        <article class="project-card">
+          <a href="https://github.com/jms1005/COSS_LED_PEDD_analyzer" target="_blank" rel="noopener" class="project-card__thumb project-card__thumb--img project-card__thumb--diagram">
+            <img src="assets/project-pedd.png" alt="LED PEDD 액체 광학 분석기 시스템 블록도">
+          </a>
           <div class="project-card__body">
-            <h3>다음 프로젝트 준비 중</h3>
-            <p>새로운 프로젝트가 곧 업데이트될 예정입니다.</p>
+            <h3>LED PEDD · 저비용 액체 광학 분석기</h3>
+            <p>
+              2026 COSS 차세대반도체 MCU 응용 경진대회 출품작입니다.
+              LED를 발광 소자이자 광검출 소자로 함께 쓰는 PEDD 방식으로,
+              포토다이오드 없이 LED 4개만으로 액체 시료를 판별합니다.
+              역방향 바이어스로 충전한 검출 LED의 방전 시간을 Analog Comparator와
+              Timer1 입력 캡처로 측정해 R·G·B 광학 지문 벡터를 만들고,
+              부동소수점 없이 32비트 정수 연산만으로 온칩 분류까지 수행합니다.
+            </p>
+            <ul class="tag-list tag-list--sm">
+              <li>ATmega328P</li><li>베어메탈 C</li><li>Analog Comparator</li><li>Timer1 Input Capture</li><li>I²C OLED</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/jms1005/COSS_LED_PEDD_analyzer" target="_blank" rel="noopener" class="link">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a href="https://github.com/jms1005/COSS_KNOCK2FA" target="_blank" rel="noopener" class="project-card__thumb project-card__thumb--img project-card__thumb--diagram">
+            <img src="assets/project-knock2fa.png" alt="knock2fa 이중 인증 잠금 시스템 블록도">
+          </a>
+          <div class="project-card__body">
+            <h3>knock2fa · 버튼 시퀀스 + 노크 리듬 이중 인증 잠금</h3>
+            <p>
+              같은 경진대회를 위해 만든 두 번째 시스템으로, '아는 것'(버튼 순서)과
+              '하는 방식'(두드리는 리듬)을 서로 다른 주변장치에서 독립적으로 읽어
+              두 결과가 같은 사용자를 가리킬 때만 잠금을 해제합니다.
+              노크 시각은 비교기 출력을 Timer1 입력 캡처에 직결해 500 ns 분해능으로 잡고,
+              템포를 정규화한 비율 벡터로 비교해 같은 리듬을 조금 빠르게 쳐도 인식되도록 했습니다.
+              PEDD 프로젝트의 분류 모듈을 그대로 재사용했습니다.
+            </p>
+            <ul class="tag-list tag-list--sm">
+              <li>ATmega328P</li><li>베어메탈 C</li><li>피에조 센서</li><li>EEPROM</li><li>이중 인증</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/jms1005/COSS_KNOCK2FA" target="_blank" rel="noopener" class="link">GitHub →</a>
+            </div>
           </div>
         </article>
 

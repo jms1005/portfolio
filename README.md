@@ -34,15 +34,20 @@
 ├── styles.css           # 전체 스타일시트
 ├── script.js            # 네비게이션, 스크롤 애니메이션, PDF 뷰어 로직
 └── assets/
-    ├── GRUTT.pdf            # GRUTT 프로젝트 발표자료
-    └── project-grutt.png    # GRUTT 프로젝트 썸네일
+    ├── GRUTT.pdf              # GRUTT 프로젝트 발표자료
+    ├── project-grutt.png      # GRUTT 프로젝트 썸네일
+    ├── project-pedd.png       # LED PEDD 분석기 시스템 블록도
+    └── project-knock2fa.png   # knock2fa 시스템 블록도
 ```
 
 ## Sections
 
 1. **About** — 자기소개 및 학력
-2. **Skills** — 사용 언어(C, Java, Verilog), 도구(Git, Arduino, Visual Studio, VS Code), 관심 분야(임베디드 시스템, 하드웨어 설계, 반도체, 게이미피케이션)
-3. **Projects** — [GRUTT](https://github.com/gyuwon000921/grutt): 반려식물 게이미피케이션 플랫폼 (센서 기반 스마트 화분 하드웨어 설계 및 사용자 플랫폼 개발)
+2. **Skills** — 사용 언어(C, Java, Verilog, Python), 도구(Git, Microchip Studio, AVR/ATmega328P, Arduino, Visual Studio, VS Code), 관심 분야(임베디드 시스템, 베어메탈 펌웨어, 하드웨어 설계, 반도체, 센서 신호처리, 게이미피케이션)
+3. **Projects**
+   - [LED PEDD 액체 광학 분석기](https://github.com/jms1005/COSS_LED_PEDD_analyzer) — 2026 COSS 차세대반도체 MCU 응용 경진대회 출품작. LED를 발광·검출 소자로 함께 쓰는 PEDD 방식으로 액체 시료를 판별하는 ATmega328P 베어메탈 시스템
+   - [knock2fa](https://github.com/jms1005/COSS_KNOCK2FA) — 버튼 시퀀스(지식)와 노크 리듬(행동)을 서로 다른 주변장치에서 독립적으로 읽어 이중 인증하는 잠금 시스템
+   - [GRUTT](https://github.com/gyuwon000921/grutt) — 반려식물 게이미피케이션 플랫폼 (센서 기반 스마트 화분 하드웨어 설계 및 사용자 플랫폼 개발)
 4. **Contact** — 이메일, GitHub
 
 ## Deployment

@@ -393,31 +393,6 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 16px 32px rgba(29,36,117,0.10);
 }
 
-.project-card--soon {
-  border-style: dashed;
-  justify-content: center;
-}
-
-.project-card--soon:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-.project-card--soon .project-card__thumb {
-  background: transparent;
-  color: var(--color-mint);
-}
-
-.project-card--soon .project-card__body {
-  align-items: center;
-  text-align: center;
-  color: var(--color-text-muted);
-}
-
-.project-card--soon h3 {
-  color: var(--color-text-muted);
-}
-
 .project-card__thumb {
   height: 140px;
   display: flex;
@@ -441,6 +416,17 @@ img { max-width: 100%; display: block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* 회로 블록도 썸네일 — 잘리면 도면이 읽히지 않으므로 전체를 담는다 */
+.project-card__thumb--diagram {
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-card__thumb--diagram img {
+  object-fit: contain;
+  padding: 10px;
 }
 
 .project-card__body {
